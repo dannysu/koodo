@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Koodo Usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+    From {{=it.from}} to {{=it.to}}
+    <h2>Airtime Usage</h2>
+    <hr>
+    <table style="width:100%">
+        <tr><td>Included Minutes</td><td align="right">{{=it.voice.allocatedQuota}}</td></tr>
+        <tr><td>Used Minutes</td><td align="right">{{=it.voice.usedMinutes}}</td></tr>
+        <tr><td>Remaining Minutes</td><td align="right">{{=it.voice.remainingQuota}}</td></tr>
+        <tr><td>Chargeable Minutes</td><td align="right">{{=it.voice.overage}}</td></tr>
+    </table>
+
+    <h2>Data Usage</h2>
+    <hr>
+    <table style="width:100%">
+        <tr><td>Usage</td><td align="right">{{=it.data.meterReadingInMbytes}} MB</td></tr>
+        <tr><td>Chargeable Amount</td><td align="right">${{=it.data.amount}}</td></tr>
+    </table>
+
+    <h2>Text Usage</h2>
+    <hr>
+    <table style="width:100%">
+        <tr><td>Usage</td><td align="right">{{=it.message.meterReading}} Messages</td></tr>
+        <tr><td>Chargeable Amount</td><td align="right">${{=it.message.amount}}</td></tr>
+    </table>
+</body>
+</html>

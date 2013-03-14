@@ -1,0 +1,8 @@
+{
+    "name": "koodo",
+    "version": "0.0.1",
+    "dependencies": {
+        "dot"     : "1.0.1",
+        "restify" : "2.3.4"
+    }
+}
